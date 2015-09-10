@@ -11,7 +11,7 @@ powerconsumption$Date <- as.Date(powerconsumption$Date,"%d/%m/%Y")
 #subset data
 powerconsumption <- subset(powerconsumption, Date >= "2007-02-01" & Date <= "2007-02-02")
 
-#Histogram
+#Create line plots
 
 with(powerconsumption,plot(Time,Sub_metering_1, type = "n" , ylab = "Energy Sub metering", xlab = ""))
 with(powerconsumption,points(Time,Sub_metering_2 , type = "n"))
